@@ -1,0 +1,26 @@
+name: Nx Cloud Workflow Validations
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+      - name: install node_modules
+        run: pnpm install --frozen-lockfile
+      - name: Validate workflows
+        run: |
+          chmod +x ./scripts/check-nx-workflow-files.sh
+          ./scripts/check-nx-workflow-files.sh
