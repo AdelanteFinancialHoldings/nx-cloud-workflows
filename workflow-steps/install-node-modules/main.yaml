@@ -1,0 +1,12 @@
+name: Install Node Modules
+description: Installs node_modules using your configured package manager.
+
+definition:
+  using: 'node'
+  main: workflow-steps/install-node-modules/output/main.js
+
+inputs:
+  - name: 'working_directory'
+    description: 'The path where your repository is. This is only required for cases where the repository code is checked out or moved to a specific path.'
+    default: '.'
+    required: false
