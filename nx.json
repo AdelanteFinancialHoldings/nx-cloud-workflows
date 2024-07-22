@@ -7,21 +7,11 @@
       "outputs": ["{projectRoot}/output"],
       "cache": true
     },
-    "lint": {
-      "cache": true
-    },
-    "test": {
-      "cache": true
-    },
-    "e2e": {
-      "cache": true
-    }
+    "lint": { "cache": true },
+    "test": { "cache": true },
+    "e2e": { "cache": true }
   },
   "useInferencePlugins": false,
-  "installation": {
-    "version": "19.5.1",
-    "plugins": {
-      "@nx/js": "19.5.1"
-    }
-  }
+  "installation": { "version": "19.5.1", "plugins": { "@nx/js": "19.5.1" } },
+  "nxCloudAccessToken": "ZjdiN2E0M2MtOTNmYi00MjA2LTllNDgtNjVlN2Q3MjZiOTM0fHJlYWQtd3JpdGU="
 }
