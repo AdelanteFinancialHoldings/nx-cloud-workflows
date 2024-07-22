@@ -1,0 +1,8 @@
+{
+  "installation": {
+    "version": "19.5.1",
+    "plugins": {
+      "@nx/js": "19.5.1"
+    }
+  }
+}
