@@ -18,7 +18,8 @@ function moveToWorkingDirectory() {
   const workingDirectory = process.env.NX_CLOUD_INPUT_working_directory;
   if (workingDirectory) {
     process.chdir(workingDirectory);
-  }    
+  }
+  console.log('working directory:', process.cwd());
 }
 
 function getInstallCommand() {
