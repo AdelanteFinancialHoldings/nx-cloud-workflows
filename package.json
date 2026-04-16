@@ -4,9 +4,6 @@
   "description": "Nx Cloud Workflows custom steps",
   "author": "",
   "license": "ISC",
-  "workspaces": [
-    "workflow-steps/*"
-  ],
   "devDependencies": {
     "@nx/js": "^19.5.1",
     "@swc-node/register": "~1.9.1",
